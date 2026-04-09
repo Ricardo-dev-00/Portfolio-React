@@ -1,0 +1,63 @@
+/* ===== DIGITAÇÃO ===== */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  width: 0;
+  animation:
+    typing 3s steps(25, end) forwards,
+    blink 0.8s infinite;
+}
+
+/* ===== ENTRADA SUAVE (fade + subida) ===== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* delay para aparecer depois da digitação */
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 3s;
+}
+
+/* ===== HOVER MAIS SUAVE (opcional) ===== */
+
+.smooth-hover {
+  transition: all 0.3s ease;
+}
+
+.smooth-hover:hover {
+  transform: scale(1.05);
+}
