@@ -1,34 +1,27 @@
-import {
-  FaLaptopCode,
-  FaReact,
-  FaPalette,
-  FaToolbox,
-  FaCheckCircle,
-  FaGraduationCap,
-} from "react-icons/fa";
+import { motion } from "framer-motion";
+import SkillIcon from "./SkillIcon";
 
-const icons = {
-  frontend: <FaLaptopCode className="text-blue-600 text-2xl" />,
-  react: <FaReact className="text-cyan-500 text-2xl" />,
-  ui: <FaPalette className="text-pink-500 text-2xl" />,
-  tools: <FaToolbox className="text-amber-500 text-2xl" />,
-  practices: <FaCheckCircle className="text-green-500 text-2xl" />,
-  learning: <FaGraduationCap className="text-purple-500 text-2xl" />,
-};
-
-export default function SkillCard({ type, title, children }) {
+export default function SkillCard({ title, skills }) {
   return (
-    <div className="bg-white dark:bg-black/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition">
-      <div className="flex items-center gap-3 mb-4">
-        {icons[type]}
-        <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-          {title}
-        </h3>
-      </div>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="group relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg p-6 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(59,130,246,0.3)]"
+    >
+      {/* Glow background */}
+      <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-blue-500/10 to-purple-500/10 blur-xl"></div>
 
-      <ul className="space-y-3 text-slate-700 dark:text-gray-300 text-sm leading-relaxed">
-        {children}
-      </ul>
-    </div>
+      <div className="relative z-10">
+        <h3 className="text-xl font-bold text-white mb-6">{title}</h3>
+
+        <div className="flex flex-wrap gap-4">
+          {skills.slice(0, 6).map((skill, index) => (
+            <SkillIcon key={index} {...skill} />
+          ))}
+        </div>
+      </div>
+    </motion.div>
   );
 }

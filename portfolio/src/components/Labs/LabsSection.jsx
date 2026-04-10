@@ -1,24 +1,25 @@
+import { labsData } from "./labsData";
 import LabCard from "./LabCard";
-import labs from "./labsData";
 
 export default function LabsSection() {
   return (
     <section
       id="labs"
-      className="min-h-screen px-4 py-20 flex items-center justify-center bg-black"
+      className="py-24 px-4 bg-gradient-to-b from-black via-slate-900 to-black"
     >
-      <div className="max-w-6xl w-full">
-        <h2 className="text-4xl font-bold text-center text-white mb-6">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
           Experimentos & Labs
         </h2>
 
-        <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-          Espaço para explorar novas tecnologias e experimentações.
+        <p className="text-gray-400 mb-16 max-w-2xl mx-auto">
+          Espaço dedicado a testes, aprendizado contínuo e exploração de novas
+          tecnologias.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {labs.map((lab, index) => (
-            <LabCard key={index} lab={lab} />
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {labsData.map((lab, index) => (
+            <LabCard key={index} {...lab} />
           ))}
         </div>
       </div>
