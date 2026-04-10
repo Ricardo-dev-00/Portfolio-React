@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import projects from "./projectsData";
-import { motion } from "framer-motion";
 
 export default function ProjectsSection() {
   return (
@@ -42,7 +42,7 @@ export default function ProjectsSection() {
           <a
             href="https://github.com/Ricardo-dev-00"
             target="_blank"
-            className="group flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30"
+            className="group flex items-center gap-3 px-8 py-4 rounded-xl bg-linear-to-r from-blue-600 to-purple-600 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30"
           >
             Ver mais no GitHub
             <span className="group-hover:translate-x-1 transition">→</span>

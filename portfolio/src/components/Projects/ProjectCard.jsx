@@ -12,7 +12,7 @@ export default function ProjectCard({ project }) {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent opacity-80"></div>
       </div>
 
       {/* CONTEÚDO */}
