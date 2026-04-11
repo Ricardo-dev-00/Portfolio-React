@@ -1,4 +1,4 @@
-import solar from "../../assets/images/solar.png";
+import solar from "../../assets/images/casa-inteligent-blog.png";
 import pet from "../../assets/images/pet&style.png";
 import estilo from "../../assets/images/estilolivre.png";
 import lc from "../../assets/images/lc-servicos.png";
@@ -7,13 +7,22 @@ import rei from "../../assets/images/Rei-chapa.png";
 
 const projects = [
   {
-    title: "Cálculo de Potencial Solar",
+    title: "Casa Inteligente Blog",
     image: solar,
     description:
-      "Simulador de energia solar que calcula placas necessárias, estima economia e gera relatório em PDF.",
-    tags: ["HTML", "CSS", "JavaScript", "jsPDF", "API REST"],
-    live: "https://ricardo-dev-00.github.io/Energia__Solar/",
-    github: "https://github.com/Ricardo-dev-00/Energia__Solar",
+      "Projeto de conteúdo com foco em casa, organização, limpeza, receitas e ofertas, construído com Next.js App Router, painel CMS próprio e integração com Supabase.",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node",
+      "ESLint",
+      "Tailwind",
+      "Next.js",
+      "Supabase",
+    ],
+    live: "https://casainteligente.social.br/",
+    github: "https://github.com/Ricardo-dev-00/casa-inteligente-blog",
   },
 
   {

@@ -4,7 +4,7 @@ import projects from "./projectsData";
 
 export default function ProjectsSection() {
   return (
-    <section className="relative py-24 px-6 bg-black">
+    <section className="relative py-24 px-6 bg-black" id="projetos">
       {/* Glow de fundo */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 blur-3xl rounded-full"></div>
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-500/20 blur-3xl rounded-full"></div>
