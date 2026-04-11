@@ -38,10 +38,6 @@ export default function Footer() {
             © {new Date().getFullYear()} Ricardo Vieira. Todos os direitos
             reservados.
           </p>
-
-          <p className="text-gray-500 text-sm">
-            Feito com ❤️ usando React + Tailwind
-          </p>
         </div>
       </div>
     </footer>

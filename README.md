@@ -1,4 +1,4 @@
-# Portfólio React
+# Portfólio
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -21,7 +21,7 @@ Busco minha primeira oportunidade como desenvolvedor front-end júnior para inte
 
 ### Versão desktop
 
-![Preview desktop do portfólio](./src/assets/images/tela-sobre.webp)
+![Preview desktop do portfólio](https://github.com/Ricardo-dev-00/Portfolio-React/blob/main/portfolio/src/assets/images/tela-sobre.webp?raw=true)
 
 ## Projeto online
 
