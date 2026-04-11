@@ -1,4 +1,4 @@
-import profileImg from "../../assets/images/perfil-ricardo2.jpeg";
+import profileImg from "../../assets/images/perfil-ricardo.webp";
 
 export default function ProfileImage() {
   return (
@@ -7,6 +7,8 @@ export default function ProfileImage() {
         <img
           src={profileImg}
           alt="Ricardo Vieira"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full rounded-2xl object-cover object-top shadow-2xl hover:scale-105 transition-transform duration-300  dark:ring-blue-400"
         />
       </div>

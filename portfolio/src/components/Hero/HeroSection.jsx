@@ -1,6 +1,6 @@
 import SocialLinks from "./SocialLinks";
 import "./hero.css";
-import bgImage from "../../assets/images/bg1.jpg";
+import bgImage from "../../assets/images/bg-hero.webp";
 
 export default function HeroSection() {
   return (

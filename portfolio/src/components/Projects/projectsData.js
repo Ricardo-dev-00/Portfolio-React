@@ -1,9 +1,9 @@
-import solar from "../../assets/images/casa-inteligent-blog.png";
-import pet from "../../assets/images/pet&style.png";
-import estilo from "../../assets/images/estilolivre.png";
-import lc from "../../assets/images/lc-servicos.png";
-import cine from "../../assets/images/cinenow.png";
-import rei from "../../assets/images/Rei-chapa.png";
+import solar from "../../assets/images/casa-inteligent-blog.webp";
+import pet from "../../assets/images/pet&style.webp";
+import estilo from "../../assets/images/estilolivre.webp";
+import lc from "../../assets/images/lc-servicos.webp";
+import cine from "../../assets/images/cinenow.webp";
+import rei from "../../assets/images/Rei-chapa.webp";
 
 const projects = [
   {
