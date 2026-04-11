@@ -101,15 +101,19 @@ export default function ContactForm() {
 /* COMPONENTES REUTILIZÁVEIS */
 
 function Input({ name, placeholder, type = "text" }) {
+  const inputId = `contact-${name}`;
+
   return (
     <div className="relative">
       <input
+        id={inputId}
         name={name}
         type={type}
         placeholder=" "
         className="peer w-full p-3 rounded-xl bg-white/10 border border-white/10 text-white outline-none focus:ring-2 focus:ring-blue-500 transition"
       />
       <label
+        htmlFor={inputId}
         className="absolute left-3 text-gray-400 transition-all 
         peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
         peer-focus:-top-5 peer-focus:text-xs peer-focus:text-blue-400
@@ -122,15 +126,19 @@ function Input({ name, placeholder, type = "text" }) {
 }
 
 function Textarea({ name, placeholder }) {
+  const textareaId = `contact-${name}`;
+
   return (
     <div className="relative">
       <textarea
+        id={textareaId}
         name={name}
         rows="5"
         placeholder=" "
         className="peer w-full p-3 rounded-xl bg-white/10 border border-white/10 text-white outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"
       />
       <label
+        htmlFor={textareaId}
         className="absolute left-3 text-gray-400 transition-all 
         peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
         peer-focus:-top-5 peer-focus:text-xs peer-focus:text-blue-400
