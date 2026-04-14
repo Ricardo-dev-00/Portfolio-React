@@ -1,5 +1,5 @@
 import solar from "../../assets/images/casa-inteligent-blog.webp";
-import pet from "../../assets/images/pet&style.webp";
+import pet from "../../assets/images/Go-Viagens.webp";
 import estilo from "../../assets/images/estilolivre.webp";
 import lc from "../../assets/images/lc-servicos.webp";
 import cine from "../../assets/images/cinenow.webp";
@@ -26,13 +26,21 @@ const projects = [
   },
 
   {
-    title: "Pet&Style",
+    title: "Go Viagens",
     image: pet,
     description:
-      "Loja fictícia com produtos para pets, design moderno e responsivo com navegação intuitiva.",
-    tags: ["HTML", "CSS", "Tailwind", "JavaScript"],
-    live: "https://ricardo-dev-00.github.io/Pet-Style/#produtos",
-    github: "https://github.com/Ricardo-dev-00/Pet-Style",
+      "Este projeto foi desenvolvido por mim como forma de aprofundar meus estudos em frontend, principalmente na criacao de landing pages com React.",
+    tags: [
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "JavaScript",
+      "React",
+      "Vite",
+      "Responsivo",
+    ],
+    live: "https://ricardo-dev-00.github.io/Go-Viagens/",
+    github: "https://github.com/Ricardo-dev-00/Go-Viagens",
   },
 
   {
