@@ -1,6 +1,9 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectCard({ project }) {
+  const liveLabel = `Abrir projeto ${project.title}`;
+  const sourceLabel = `Abrir código-fonte do projeto ${project.title} no GitHub`;
+
   return (
     <div className="group relative rounded-2xl overflow-hidden bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col h-full">
       {/* IMAGEM */}
@@ -42,18 +45,22 @@ export default function ProjectCard({ project }) {
           <a
             href={project.live}
             target="_blank"
-            className="flex-1 flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 cursor-pointer text-white text-sm font-semibold py-2 rounded-lg transition-all duration-300 hover:scale-105"
+            rel="noopener noreferrer"
+            aria-label={liveLabel}
+            className="flex-1 flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 cursor-pointer text-white text-sm font-semibold py-2 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black transition-all duration-300 hover:scale-105"
           >
-            <FaExternalLinkAlt />
+            <FaExternalLinkAlt aria-hidden="true" focusable="false" />
             Ver
           </a>
 
           <a
             href={project.github}
             target="_blank"
-            className="flex-1 flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 cursor-pointer text-white text-sm font-semibold py-2 rounded-lg transition-all duration-300 hover:scale-105"
+            rel="noopener noreferrer"
+            aria-label={sourceLabel}
+            className="flex-1 flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 cursor-pointer text-white text-sm font-semibold py-2 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black transition-all duration-300 hover:scale-105"
           >
-            <FaGithub />
+            <FaGithub aria-hidden="true" focusable="false" />
             Código
           </a>
         </div>

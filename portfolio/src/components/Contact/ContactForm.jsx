@@ -13,6 +13,7 @@ export default function ContactForm() {
     const data = new FormData(form);
 
     if (!data.get("nome") || !data.get("email") || !data.get("mensagem")) {
+      setSuccess(false);
       setError("Preencha os campos obrigatórios.");
       return;
     }
@@ -33,9 +34,11 @@ export default function ContactForm() {
         setSuccess(true);
         form.reset();
       } else {
+        setSuccess(false);
         setError("Erro ao enviar.");
       }
     } catch {
+      setSuccess(false);
       setError("Erro de conexão.");
     }
 
@@ -50,14 +53,23 @@ export default function ContactForm() {
       <div className="relative bg-white/5 backdrop-blur-2xl border border-white/10 rounded-2xl p-8 shadow-2xl">
         {/* SUCESSO */}
         {success && (
-          <div className="mb-6 p-4 rounded-lg bg-green-500/20 text-green-300 border border-green-500/30 text-center animate-fadeIn">
+          <div
+            role="status"
+            aria-live="polite"
+            className="mb-6 p-4 rounded-lg bg-green-500/20 text-green-200 border border-green-500/30 text-center animate-fadeIn"
+          >
             🎉 Mensagem enviada com sucesso!
           </div>
         )}
 
         {/* ERRO */}
         {error && (
-          <div className="mb-6 p-4 rounded-lg bg-red-500/20 text-red-300 border border-red-500/30 text-center">
+          <div
+            id="contact-form-error"
+            role="alert"
+            aria-live="assertive"
+            className="mb-6 p-4 rounded-lg bg-red-500/20 text-red-200 border border-red-500/30 text-center"
+          >
             {error}
           </div>
         )}
@@ -77,17 +89,18 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={loading}
+            aria-busy={loading}
             className={`w-full flex items-center justify-center cursor-pointer gap-2 py-3 rounded-xl font-semibold transition-all duration-300 ${
               loading
                 ? "bg-gray-500 cursor-not-allowed"
-                : "bg-linear-to-r from-blue-600 to-purple-600 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30"
+                : "bg-linear-to-r from-blue-700 to-purple-700 text-white hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
             }`}
           >
             {loading ? (
               "Enviando..."
             ) : (
               <>
-                <FaPaperPlane />
+                <FaPaperPlane aria-hidden="true" focusable="false" />
                 Enviar Mensagem
               </>
             )}
@@ -102,6 +115,12 @@ export default function ContactForm() {
 
 function Input({ name, placeholder, type = "text" }) {
   const inputId = `contact-${name}`;
+  const autocompleteMap = {
+    nome: "name",
+    email: "email",
+    assunto: "on",
+  };
+  const isRequired = name === "nome" || name === "email";
 
   return (
     <div className="relative">
@@ -109,12 +128,16 @@ function Input({ name, placeholder, type = "text" }) {
         id={inputId}
         name={name}
         type={type}
+        autoComplete={autocompleteMap[name] ?? "on"}
+        required={isRequired}
         placeholder=" "
-        className="peer w-full p-3 rounded-xl bg-white/10 border border-white/10 text-white outline-none focus:ring-2 focus:ring-blue-500 transition"
+        aria-required={isRequired}
+        aria-invalid={name !== "assunto" ? undefined : undefined}
+        className="peer w-full p-3 rounded-xl bg-white/10 border border-white/10 text-white outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition"
       />
       <label
         htmlFor={inputId}
-        className="absolute left-3 text-gray-400 transition-all 
+        className="absolute left-3 text-gray-300 transition-all 
         peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
         peer-focus:-top-5 peer-focus:text-xs peer-focus:text-blue-400
         -top-2 text-xs"
@@ -134,12 +157,15 @@ function Textarea({ name, placeholder }) {
         id={textareaId}
         name={name}
         rows="5"
+        autoComplete="off"
+        required
         placeholder=" "
-        className="peer w-full p-3 rounded-xl bg-white/10 border border-white/10 text-white outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"
+        aria-required="true"
+        className="peer w-full p-3 rounded-xl bg-white/10 border border-white/10 text-white outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition resize-none"
       />
       <label
         htmlFor={textareaId}
-        className="absolute left-3 text-gray-400 transition-all 
+        className="absolute left-3 text-gray-300 transition-all 
         peer-placeholder-shown:top-3 peer-placeholder-shown:text-base 
         peer-focus:-top-5 peer-focus:text-xs peer-focus:text-blue-400
         -top-2 text-xs"

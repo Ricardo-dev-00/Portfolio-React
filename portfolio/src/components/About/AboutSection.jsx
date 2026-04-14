@@ -75,7 +75,7 @@ export default function AboutSection() {
               <a
                 href="/cv-ricardo_vieira.pdf"
                 download
-                className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30 hover:shadow-lg"
+                className="flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-medium py-3 px-6 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30 hover:shadow-lg"
               >
                 <FaDownload />
                 Baixar Currículo
@@ -83,7 +83,7 @@ export default function AboutSection() {
 
               <a
                 href="#projetos"
-                className="flex items-center justify-center gap-2 border border-slate-300 dark:border-white/20 text-slate-900 dark:text-white py-3 px-6 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 transition-all"
+                className="flex items-center justify-center gap-2 border border-slate-400 dark:border-white/30 text-slate-900 dark:text-white py-3 px-6 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-white/80 dark:focus-visible:ring-offset-black transition-all"
               >
                 Ver Projetos
               </a>

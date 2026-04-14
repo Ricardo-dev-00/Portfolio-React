@@ -22,25 +22,25 @@ export default function HeroSection() {
       {/* Conteúdo */}
       <div className="relative z-10 text-center px-4 max-w-3xl">
         {/* Nome */}
-        <p className="text-blue-400 text-lg mb-4 fade-in-up">Olá, eu sou</p>
+        <p className="text-blue-300 text-lg mb-4 fade-in-up">Olá, eu sou</p>
 
         <h1 className="text-white text-5xl sm:text-6xl md:text-7xl font-bold mb-4 drop-shadow-lg fade-in-up delay-1">
           Ricardo Vieira
         </h1>
 
         {/* Título animado */}
-        <p className="typing text-gray-300 text-2xl sm:text-3xl mb-6">
+        <p className="typing text-gray-200 text-2xl sm:text-3xl mb-6">
           Desenvolvedor Front-end
         </p>
 
         {/* Subtítulo forte */}
-        <p className="text-gray-400 text-lg sm:text-xl max-w-xl mx-auto mb-6 fade-in-up delay-2">
+        <p className="text-gray-200 text-lg sm:text-xl max-w-xl mx-auto mb-6 fade-in-up delay-2">
           Construo interfaces modernas, rápidas e responsivas com React, focadas
           em performance e experiência do usuário.
         </p>
 
         {/* Stack */}
-        <div className="flex flex-wrap justify-center gap-3 text-sm text-gray-400 mb-6 fade-in-up delay-2">
+        <div className="flex flex-wrap justify-center gap-3 text-sm text-gray-200 mb-6 fade-in-up delay-2">
           <span>React</span>
           <span>•</span>
           <span>Next.js</span>
@@ -59,14 +59,14 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in-up delay-3">
           <a
             href="#projetos"
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/40 hover:shadow-lg"
+            className="bg-blue-700 hover:bg-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-500/40 hover:shadow-lg"
           >
             Ver Projetos
           </a>
 
           <a
             href="#contato"
-            className="border border-white/20 text-white py-3 px-8 rounded-lg hover:bg-white/10 transition-all duration-300"
+            className="border border-white/30 text-white py-3 px-8 rounded-lg hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-black transition-all duration-300"
           >
             Falar comigo
           </a>
@@ -74,7 +74,7 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-gray-400 animate-bounce">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-gray-200 animate-bounce">
         ↓
       </div>
     </section>

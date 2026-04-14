@@ -15,7 +15,7 @@ export default function Footer() {
             <h3 className="text-white text-xl font-bold mb-4">
               Ricardo Vieira
             </h3>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-200 leading-relaxed">
               Desenvolvedor Front-end focado em criar interfaces modernas,
               responsivas e com ótima experiência do usuário.
             </p>
@@ -34,7 +34,7 @@ export default function Footer() {
 
         {/* DIVISOR */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-300 text-sm">
             © {new Date().getFullYear()} Ricardo Vieira. Todos os direitos
             reservados.
           </p>

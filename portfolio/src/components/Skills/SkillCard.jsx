@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import SkillIcon from "./SkillIcon";
 
 export default function SkillCard({ title, skills }) {
+  const MotionDiv = motion.div;
+
   return (
-    <motion.div
+    <MotionDiv
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -22,6 +24,6 @@ export default function SkillCard({ title, skills }) {
           ))}
         </div>
       </div>
-    </motion.div>
+    </MotionDiv>
   );
 }

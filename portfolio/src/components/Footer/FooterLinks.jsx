@@ -15,7 +15,7 @@ export default function FooterLinks() {
           <li key={index}>
             <a
               href={item.link}
-              className="text-gray-400 hover:text-blue-400 transition"
+              className="text-gray-200 hover:text-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm transition"
             >
               {item.name}
             </a>

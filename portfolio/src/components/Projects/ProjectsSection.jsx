@@ -3,6 +3,8 @@ import ProjectCard from "./ProjectCard";
 import projects from "./projectsData";
 
 export default function ProjectsSection() {
+  const MotionDiv = motion.div;
+
   return (
     <section className="relative py-24 px-6 bg-black" id="projetos">
       {/* Glow de fundo */}
@@ -24,7 +26,7 @@ export default function ProjectsSection() {
         {/* GRID */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <MotionDiv
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +35,7 @@ export default function ProjectsSection() {
               className="h-full"
             >
               <ProjectCard project={project} />
-            </motion.div>
+            </MotionDiv>
           ))}
         </div>
 
@@ -42,6 +44,7 @@ export default function ProjectsSection() {
           <a
             href="https://github.com/Ricardo-dev-00"
             target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center gap-3 px-8 py-4 rounded-xl bg-linear-to-r from-blue-600 to-purple-600 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30"
           >
             Ver mais no GitHub
