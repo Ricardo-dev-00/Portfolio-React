@@ -29,6 +29,17 @@ Acesse a versão publicada em:
 
 https://ricardo-dev-00.github.io/Portfolio-React/
 
+## Relatório PageSpeed Insights
+
+![Relatório PageSpeed Insights do portfólio](https://github.com/Ricardo-dev-00/Portfolio-React/blob/main/portfolio/public/relatorioDesempenho.webp?raw=true)
+
+Notas obtidas na auditoria:
+
+- Desempenho: 98
+- Acessibilidade: 96
+- Práticas recomendadas: 100
+- SEO: 100
+
 ## Links profissionais
 
 - GitHub: https://github.com/Ricardo-dev-00
