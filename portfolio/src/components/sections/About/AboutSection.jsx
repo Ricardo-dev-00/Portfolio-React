@@ -36,9 +36,11 @@ export default function AboutSection() {
             </p>
 
             <p className="text-slate-700 dark:text-gray-300 text-lg mb-6">
-              Atualmente estudo Engenharia Front-end na EBAC e evoluo
-              constantemente através de projetos práticos, focando em
-              performance, responsividade e boas práticas de desenvolvimento.
+              Concluí minha formação em Engenharia Front-end pela EBAC e,
+              atualmente, curso Tecnólogo em Sistemas para Internet na Gran
+              Faculdade, evoluindo constantemente através de projetos práticos,
+              com foco em performance, responsividade e boas práticas de
+              desenvolvimento.
             </p>
 
             <p className="text-slate-700 dark:text-gray-300 text-lg mb-8">

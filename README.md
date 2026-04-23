@@ -11,11 +11,11 @@ O foco da aplicação é reunir meus trabalhos em um só lugar, destacar minha e
 
 ## Resumo profissional
 
-Desenvolvedor front-end em formação pela EBAC, com base prática em HTML, CSS, JavaScript, React e consumo de APIs, além de experiência anterior em informática, o que fortaleceu minha lógica, autonomia e capacidade de resolução de problemas.
+Desenvolvedor front-end formado em Engenharia Front-end pela EBAC e, atualmente, estudante de Tecnólogo em Sistemas para Internet pela Gran Faculdade. Tenho base prática em HTML, CSS, JavaScript, React e consumo de APIs, além de experiência anterior em informática, que fortaleceu minha lógica, autonomia e capacidade de resolução de problemas.
 
 Já desenvolvi projetos práticos e freelance, aplicando conceitos de responsividade, componentização, organização de código e foco na experiência do usuário em cenários reais.
 
-Busco minha primeira oportunidade como desenvolvedor front-end júnior para integrar um time, contribuir com entregas de qualidade e continuar evoluindo tecnicamente com consistência e aprendizado contínuo.
+Busco oportunidades como desenvolvedor front-end júnior para integrar um time, contribuir com entregas de qualidade e continuar evoluindo tecnicamente com consistência e aprendizado contínuo.
 
 ## Preview
 
@@ -70,39 +70,53 @@ Este portfólio foi desenvolvido com foco em componentização, performance e um
 
 ## Estrutura do projeto
 
-O projeto está organizado em componentes reutilizáveis, separados por seções da página:
+Após a refatoração, o projeto passou a seguir uma estrutura mais escalável e orientada por responsabilidades:
 
-- Hero
-- About
-- Skills
-- Projects
-- Labs
-- Contact
-- Footer
+```text
+/public
+/src
+	/api         # camada HTTP (fetch/client helpers)
+	/assets      # imagens, ícones e arquivos estáticos
+	/components
+		/layout    # componentes de layout (ex.: Footer)
+		/sections  # seções da Home (Hero, About, Skills, Projects, Labs, Contact)
+		/ui        # componentes reutilizáveis de interface
+	/data        # dados estáticos (skills, projetos, labs, links)
+	/hooks       # hooks customizados (ex.: useContactForm)
+	/pages       # páginas da aplicação
+	/services    # regras de negócio e integração com serviços externos
+	/utils       # funções utilitárias
+```
 
-Além disso, os dados de projetos, skills e labs ficam separados em arquivos próprios, o que facilita manutenção e atualização do conteúdo.
+Essa organização melhora manutenção, legibilidade e evolução do código sem acoplamento excessivo entre interface e lógica.
 
 ## Como executar localmente
 
-### 1. Instale as dependências
+### 1. Acesse a pasta da aplicação
+
+```bash
+cd portfolio
+```
+
+### 2. Instale as dependências
 
 ```bash
 npm install
 ```
 
-### 2. Inicie o servidor de desenvolvimento
+### 3. Inicie o servidor de desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-### 3. Gere a build de produção
+### 4. Gere a build de produção
 
 ```bash
 npm run build
 ```
 
-### 4. Visualize a build localmente
+### 5. Visualize a build localmente
 
 ```bash
 npm run preview
