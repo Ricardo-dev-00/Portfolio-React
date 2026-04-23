@@ -1,5 +1,5 @@
 import FooterLinks from "./FooterLinks";
-import SocialLinks from "./SocialLinks";
+import FooterSocialLinks from "./FooterSocialLinks";
 
 export default function Footer() {
   return (
@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-xl font-bold mb-4">Conecte-se</h3>
 
-            <SocialLinks />
+            <FooterSocialLinks />
           </div>
         </div>
 

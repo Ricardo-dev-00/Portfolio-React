@@ -1,5 +1,5 @@
-import ProfileImage from "./ProfileImagem";
 import { FaDownload, FaCode, FaRocket, FaLaptopCode } from "react-icons/fa";
+import ProfileImage from "./ProfileImage";
 
 export default function AboutSection() {
   return (

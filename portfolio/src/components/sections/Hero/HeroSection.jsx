@@ -1,6 +1,6 @@
-import SocialLinks from "./SocialLinks";
+import bgImage from "../../../assets/images/bg-hero.webp";
+import HeroSocialLinks from "./HeroSocialLinks";
 import "./hero.css";
-import bgImage from "../../assets/images/bg-hero.webp";
 
 export default function HeroSection() {
   return (
@@ -16,7 +16,7 @@ export default function HeroSection() {
 
       {/* Social */}
       <div className="absolute top-8 right-8 z-20">
-        <SocialLinks />
+        <HeroSocialLinks />
       </div>
 
       {/* Conteúdo */}

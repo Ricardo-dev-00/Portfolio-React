@@ -1,4 +1,4 @@
-import profileImg from "../../assets/images/perfil-ricardo.webp";
+import profileImg from "../../../assets/images/perfil-ricardo.webp";
 
 export default function ProfileImage() {
   return (

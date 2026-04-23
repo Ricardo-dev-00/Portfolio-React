@@ -1,5 +1,5 @@
-import { labsData } from "./labsData";
 import LabCard from "./LabCard";
+import { labsData } from "../../../data/labsData";
 
 export default function LabsSection() {
   return (

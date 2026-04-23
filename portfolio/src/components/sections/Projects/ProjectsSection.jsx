@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
-import projects from "./projectsData";
+import projects from "../../../data/projectsData";
 
 export default function ProjectsSection() {
   const MotionDiv = motion.div;
