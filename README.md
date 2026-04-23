@@ -11,7 +11,7 @@ O foco da aplicação é reunir meus trabalhos em um só lugar, destacar minha e
 
 ## Resumo profissional
 
-Desenvolvedor front-end formado em Engenharia Front-end pela EBAC e, atualmente, estudante de Tecnólogo em Sistemas para Internet pela Gran Faculdade. Tenho base prática em HTML, CSS, JavaScript, React e consumo de APIs, além de experiência anterior em informática, que fortaleceu minha lógica, autonomia e capacidade de resolução de problemas.
+Desenvolvedor front-end formado em Engenharia Front-end pela EBAC e, atualmente, cursando superior em Sistemas para Internet pela Gran Faculdade. Tenho base prática em HTML, CSS, JavaScript, React e consumo de APIs, além de experiência anterior em informática, que fortaleceu minha lógica, autonomia e capacidade de resolução de problemas.
 
 Já desenvolvi projetos práticos e freelance, aplicando conceitos de responsividade, componentização, organização de código e foco na experiência do usuário em cenários reais.
 
@@ -70,7 +70,7 @@ Este portfólio foi desenvolvido com foco em componentização, performance e um
 
 ## Estrutura do projeto
 
-Após a refatoração, o projeto passou a seguir uma estrutura mais escalável e orientada por responsabilidades:
+ O projeto conta com uma estrutura escalável e orientada por responsabilidades:
 
 ```text
 /public
