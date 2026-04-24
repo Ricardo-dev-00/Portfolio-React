@@ -1,6 +1,6 @@
 import solar from "../assets/images/casa-inteligent-blog.webp";
 import pet from "../assets/images/Go-Viagens.webp";
-import estilo from "../assets/images/estilolivre.webp";
+import anotacoes from "../assets/images/anotacoes.webp";
 import lc from "../assets/images/lc-servicos.webp";
 import cine from "../assets/images/cinenow.webp";
 import rei from "../assets/images/Rei-chapa.webp";
@@ -44,13 +44,22 @@ const projects = [
   },
 
   {
-    title: "Estilo Livre",
-    image: estilo,
+    title: "Anotações PWA",
+    image: anotacoes,
     description:
-      "Landing page responsiva para barbearia com design elegante e foco em experiência do usuário.",
-    tags: ["HTML", "CSS", "Bootstrap"],
-    live: "https://ricardo-dev-00.github.io/Estilo_Livre/",
-    github: "https://github.com/Ricardo-dev-00/Estilo_Livre",
+      "Anotações PWA é uma aplicação web com experiência de app, criada para registrar atividades diárias de forma simples, rápida e com suporte offline.",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PWA",
+      "Responsivo",
+      "github-pages",
+      "Web App Manifest",
+      "Service Worker",
+    ],
+    live: "https://ricardo-dev-00.github.io/Diario-de-Bordo_PWA/",
+    github: "https://github.com/Ricardo-dev-00/Diario-de-Bordo_PWA",
   },
 
   {
