@@ -11,29 +11,29 @@ export const labsData = [
   {
     title: "Animações CSS",
     description:
-      "Exploração de animações com CSS puro, transitions, keyframes e efeitos visuais modernos.",
+      "Crio interações visuais com transições suaves, keyframes e efeitos modernos para deixar as interfaces mais vivas.",
     icon: FaCode,
     gradient: "from-purple-500 to-pink-500",
-    link: "https://ricardo-dev-00.github.io/teste-api/",
-    github: "https://github.com/Ricardo-dev-00/teste-api",
+    link: null,
+    github: null,
   },
   {
     title: "Componentes Reutilizáveis",
     description:
-      "Biblioteca de componentes modernos com foco em reutilização e organização.",
+      "Estruturo componentes reutilizáveis com foco em consistência visual, manutenção simples e escalabilidade.",
     icon: FaFlask,
     gradient: "from-blue-500 to-cyan-500",
-    link: "https://ricardo-dev-00.github.io/teste-api/",
-    github: "https://github.com/Ricardo-dev-00/teste-api",
+    link: null,
+    github: null,
   },
   {
-    title: "Integração com APIs",
+    title: "Práticas Front-end",
     description:
-      "Testes com APIs públicas utilizando fetch e axios para consumo de dados.",
-    icon: FaPlug,
-    gradient: "from-green-500 to-emerald-500",
-    link: "https://ricardo-dev-00.github.io/teste-api/",
-    github: "https://github.com/Ricardo-dev-00/teste-api",
+      "Aplico boas práticas de performance, responsividade e acessibilidade para entregar experiências mais completas.",
+    icon: FaRocket,
+    gradient: "from-indigo-500 to-purple-500",
+    link: null,
+    github: null,
   },
   {
     title: "Clone Spotify UI",
@@ -54,12 +54,12 @@ export const labsData = [
     github: "https://github.com/Ricardo-dev-00/CloneNetflix",
   },
   {
-    title: "Práticas Front-end",
+    title: "Integração com APIs",
     description:
-      "Experimentos com performance, acessibilidade e boas práticas modernas.",
-    icon: FaRocket,
-    gradient: "from-indigo-500 to-purple-500",
-    link: "#",
-    github: "#",
+      "Testes com APIs públicas utilizando fetch e axios para consumo de dados.",
+    icon: FaPlug,
+    gradient: "from-green-500 to-emerald-500",
+    link: "https://ricardo-dev-00.github.io/teste-api/",
+    github: "https://github.com/Ricardo-dev-00/teste-api",
   },
 ];
