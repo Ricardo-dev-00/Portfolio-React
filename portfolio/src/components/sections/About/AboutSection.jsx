@@ -25,27 +25,27 @@ export default function AboutSection() {
 
           {/* Conteúdo */}
           <div>
-            <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
-              Desenvolvedor focado em criar experiências digitais modernas
+            <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">
+              Desenvolvedor Front-End focado em interfaces modernas e
+              performáticas
             </h3>
 
-            <p className="text-slate-700 dark:text-gray-300 text-lg mb-6">
-              Sou Ricardo Vieira, desenvolvedor front-end de São Luís–MA,
-              apaixonado por tecnologia e em busca da minha primeira
-              oportunidade profissional na área.
+            <p className="text-slate-700 dark:text-gray-300 text-lg mb-5">
+              Sou Ricardo Vieira, de São Luís (MA), em busca da minha primeira
+              oportunidade profissional na área de desenvolvimento front-end.
             </p>
 
-            <p className="text-slate-700 dark:text-gray-300 text-lg mb-6">
-              Concluí minha formação em Engenharia Front-end pela EBAC e,
-              atualmente, curso Tecnólogo em Sistemas para Internet na Gran
-              Faculdade, evoluindo constantemente através de projetos práticos,
-              com foco em performance, responsividade e boas práticas de
-              desenvolvimento.
+            <p className="text-slate-700 dark:text-gray-300 text-lg mb-5">
+              Concluí uma formação prática em Engenharia Front-End pela EBAC e
+              atualmente curso o ensino superior em Sistemas para Internet pela
+              Gran Faculdade, com foco em evolução contínua por meio de projetos
+              reais.
             </p>
 
             <p className="text-slate-700 dark:text-gray-300 text-lg mb-8">
-              Trabalho com React, Next.js e Tailwind CSS, criando interfaces
-              modernas, acessíveis e com foco total na experiência do usuário.
+              Trabalho com React, Next.js e Tailwind CSS, desenvolvendo
+              interfaces responsivas, acessíveis e com foco em performance e
+              experiência do usuário.
             </p>
 
             {/* HIGHLIGHTS */}
