@@ -1,5 +1,5 @@
-import solar from "../assets/images/casa-inteligent-blog.webp";
-import pet from "../assets/images/Go-Viagens.webp";
+import CasaInteligente from "../assets/images/casa-inteligent-blog.webp";
+import ValorCar from "../assets/images/ValorCar.webp";
 import anotacoes from "../assets/images/anotacoes.webp";
 import lc from "../assets/images/lc-servicos.webp";
 import cine from "../assets/images/cinenow.webp";
@@ -8,7 +8,7 @@ import rei from "../assets/images/Rei-chapa.webp";
 const projects = [
   {
     title: "Casa Inteligente Blog",
-    image: solar,
+    image: CasaInteligente,
     description:
       "Projeto de conteúdo com foco em casa, organização, limpeza, receitas e ofertas, construído com Next.js App Router, painel CMS próprio e integração com Supabase.",
     tags: [
@@ -26,21 +26,22 @@ const projects = [
   },
 
   {
-    title: "Go Viagens",
-    image: pet,
+    title: "ValorCar",
+    image: ValorCar,
     description:
-      "Este projeto foi desenvolvido por mim como forma de aprofundar meus estudos em frontend, principalmente na criacao de landing pages com React.",
+      "Aplicacao web para consulta de valor FIPE com experiencia simples, rapida e orientada ao usuario final.",
     tags: [
       "HTML",
-      "CSS",
       "Tailwind",
-      "JavaScript",
+      "TypeScript",
       "React",
       "Vite",
       "Responsivo",
+      "API",
+      "ESLint",
     ],
-    live: "https://ricardo-dev-00.github.io/Go-Viagens/",
-    github: "https://github.com/Ricardo-dev-00/Go-Viagens",
+    live: "https://ricardo-dev-00.github.io/ValorCar/",
+    github: "https://github.com/Ricardo-dev-00/ValorCar",
   },
 
   {
