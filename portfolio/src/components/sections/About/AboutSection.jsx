@@ -2,6 +2,8 @@ import { FaDownload, FaCode, FaRocket, FaLaptopCode } from "react-icons/fa";
 import ProfileImage from "./ProfileImage";
 
 export default function AboutSection() {
+  const resumeUrl = `${import.meta.env.BASE_URL}cv-ricardo-vieira.pdf`;
+
   return (
     <section
       id="sobre"
@@ -75,7 +77,7 @@ export default function AboutSection() {
             {/* BOTÕES */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="/cv-ricardo-vieira.pdf"
+                href={resumeUrl}
                 download
                 className="flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-medium py-3 px-6 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black transition-all duration-300 hover:scale-105 hover:shadow-blue-500/30 hover:shadow-lg"
               >
