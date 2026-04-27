@@ -37,8 +37,8 @@ export default function AboutSection() {
 
             <p className="text-slate-700 dark:text-gray-300 text-lg mb-5">
               Concluí uma formação prática em Engenharia Front-End pela EBAC e
-              atualmente curso o ensino superior em Sistemas para Internet pela
-              Gran Faculdade, com foco em evolução contínua por meio de projetos
+              atualmente curso superior em Sistemas para Internet pela Gran
+              Faculdade, com foco em evolução contínua por meio de projetos
               reais.
             </p>
 

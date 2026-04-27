@@ -106,7 +106,7 @@ const projects = [
       "Telegram Bot",
       "Pix",
     ],
-    live: "https://automalanches-production.up.railway.app/",
+    live: "https://ricardo-dev-00.github.io/AutomaLanches/",
     github: "https://github.com/Ricardo-dev-00/AutomaLanches",
   },
 ];
