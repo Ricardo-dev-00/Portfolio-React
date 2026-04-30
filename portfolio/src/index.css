@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.featured-zoom {
+  animation: zoom 10s ease-in-out infinite alternate;
+}

@@ -18,8 +18,8 @@ export default function LabsSection() {
         </p>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {labsData.map((lab, index) => (
-            <LabCard key={index} {...lab} />
+          {labsData.map((lab) => (
+            <LabCard key={lab.title} {...lab} />
           ))}
         </div>
       </div>

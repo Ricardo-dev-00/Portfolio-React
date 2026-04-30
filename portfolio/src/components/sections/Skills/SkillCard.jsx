@@ -19,8 +19,8 @@ export default function SkillCard({ title, skills }) {
         <h3 className="text-xl font-bold text-white mb-6">{title}</h3>
 
         <div className="flex flex-wrap gap-4">
-          {skills.slice(0, 6).map((skill, index) => (
-            <SkillIcon key={index} {...skill} />
+          {skills.slice(0, 6).map((skill) => (
+            <SkillIcon key={skill.name} {...skill} />
           ))}
         </div>
       </div>

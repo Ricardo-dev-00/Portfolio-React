@@ -4,6 +4,7 @@ import anotacoes from "../assets/images/anotacoes.webp";
 import lc from "../assets/images/lc-servicos.webp";
 import cine from "../assets/images/cinenow.webp";
 import rei from "../assets/images/Rei-chapa.webp";
+import GoViagens from "../assets/images/GoViagens.webp";
 
 const projects = [
   {
@@ -12,8 +13,8 @@ const projects = [
     description:
       "Projeto de conteúdo com foco em casa, organização, limpeza, receitas e ofertas, construído com Next.js App Router, painel CMS próprio e integração com Supabase.",
     metrics: [
-      { label: "Arquitetura", value: "App Router", icon: "code" },
-      { label: "Backoffice", value: "CMS próprio", icon: "chart" },
+      { label: "Arquitetura", value: "Router", icon: "code" },
+      { label: "Backoffice", value: "CMS", icon: "chart" },
       { label: "Dados", value: "Supabase", icon: "stack" },
     ],
     tags: [
@@ -97,8 +98,7 @@ const projects = [
 
   {
     title: "Go Viagens",
-    image:
-      "https://raw.githubusercontent.com/Ricardo-dev-00/Go-Viagens/main/GoViagens/public/images/page-goviagens.png",
+    image: GoViagens,
     description:
       "Landing page de viagens com foco em interface visual, organização de componentes por seção, responsividade e animações de entrada leves.",
     metrics: [

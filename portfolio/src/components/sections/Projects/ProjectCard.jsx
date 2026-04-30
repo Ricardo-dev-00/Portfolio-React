@@ -56,6 +56,8 @@ const fallbackMetrics = [
   { label: "Entrega", value: "real", icon: "chart" },
 ];
 
+const Motion = motion;
+
 export default function ProjectCard({ project, index }) {
   const isFeatured = Boolean(project.featured);
   const preset = stylePresets[index % stylePresets.length];
@@ -103,11 +105,11 @@ export default function ProjectCard({ project, index }) {
   if (!isFeatured) {
     return (
       <motion.article
-        initial={{ opacity: 0, y: 40, scale: 0.96 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        initial={{ opacity: 0, x: 90, scale: 0.96 }}
+        whileInView={{ opacity: 1, x: 0, scale: 1 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{
-          duration: 0.6,
+          duration: 0.7,
           delay: index * 0.12,
           ease: [0.16, 1, 0.3, 1],
         }}
@@ -208,11 +210,11 @@ export default function ProjectCard({ project, index }) {
                       delay: index * 0.12 + 0.4 + i * 0.08,
                       duration: 0.3,
                     }}
-                    className="flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-white/10 bg-white/[0.06] px-2 py-1.5"
+                    className="flex min-w-0 flex-1 items-center gap-1.5 rounded-lg border border-white/10 bg-white/[0.06] px-2 py-1.5"
                     title={metric.label}
                   >
                     <MetricIcon className="size-3 shrink-0 text-white/60" />
-                    <span className="truncate text-[10px] font-semibold text-white/80">
+                    <span className="block min-w-0 truncate text-[10px] font-semibold text-white/80">
                       {metric.value}
                     </span>
                   </motion.div>
@@ -311,7 +313,7 @@ export default function ProjectCard({ project, index }) {
             alt={project.title}
             loading="lazy"
             decoding="async"
-            className="absolute inset-0 size-full object-cover"
+            className="absolute inset-0 size-full object-cover featured-zoom"
             whileHover={{ scale: 1.08 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           />

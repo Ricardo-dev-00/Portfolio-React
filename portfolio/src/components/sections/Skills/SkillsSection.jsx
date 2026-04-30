@@ -18,8 +18,8 @@ export default function SkillsSection() {
         </p>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {skillsData.map((item, index) => (
-            <SkillCard key={index} {...item} />
+          {skillsData.map((item) => (
+            <SkillCard key={item.title} {...item} />
           ))}
         </div>
       </div>

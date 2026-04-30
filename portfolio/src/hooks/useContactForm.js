@@ -10,6 +10,7 @@ export function useContactForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setSuccess(false);
 
     const form = event.target;
     const data = new FormData(form);
@@ -29,10 +30,20 @@ export function useContactForm() {
 
       if (response.ok) {
         setSuccess(true);
+        setError("");
         form.reset();
       } else {
+        let errorMessage = "Erro ao enviar.";
+        try {
+          const body = await response.json();
+          if (body?.message) {
+            errorMessage = body.message;
+          }
+        } catch {
+          // Mantém mensagem padrão quando o backend não retornar JSON.
+        }
         setSuccess(false);
-        setError("Erro ao enviar.");
+        setError(errorMessage);
       }
     } catch {
       setSuccess(false);

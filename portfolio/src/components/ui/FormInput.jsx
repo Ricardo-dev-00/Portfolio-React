@@ -1,5 +1,6 @@
 export default function FormInput({ name, placeholder, type = "text" }) {
   const inputId = `contact-${name}`;
+  const emailPattern = "[^\\s@]+@[^\\s@]+\\.[^\\s@]+";
   const autocompleteMap = {
     nome: "name",
     email: "email",
@@ -13,6 +14,8 @@ export default function FormInput({ name, placeholder, type = "text" }) {
         id={inputId}
         name={name}
         type={type}
+        inputMode={name === "email" ? "email" : undefined}
+        pattern={name === "email" ? emailPattern : undefined}
         autoComplete={autocompleteMap[name] ?? "on"}
         required={isRequired}
         placeholder=" "

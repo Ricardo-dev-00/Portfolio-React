@@ -1,4 +1,5 @@
 import { FaDownload, FaCode, FaRocket, FaLaptopCode } from "react-icons/fa";
+import { motion as Motion } from "framer-motion";
 import ProfileImage from "./ProfileImage";
 
 export default function AboutSection() {
@@ -15,18 +16,36 @@ export default function AboutSection() {
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Título */}
-        <div className="text-center mb-16">
+        <Motion.div
+          initial={{ opacity: 0, x: 70 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.35 }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center mb-16"
+        >
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">
             Sobre Mim
           </h2>
-        </div>
+        </Motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Foto */}
-          <ProfileImage />
+          <Motion.div
+            initial={{ opacity: 0, x: -90 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.35 }}
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <ProfileImage />
+          </Motion.div>
 
           {/* Conteúdo */}
-          <div>
+          <Motion.div
+            initial={{ opacity: 0, x: 90 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          >
             <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">
               Desenvolvedor Front-End focado em interfaces modernas e
               performáticas
@@ -92,7 +111,7 @@ export default function AboutSection() {
                 Ver Projetos
               </a>
             </div>
-          </div>
+          </Motion.div>
         </div>
       </div>
     </section>
